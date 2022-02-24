@@ -1,0 +1,332 @@
+*{margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family:roboto-r;
+}
+
+body{
+	background-image:url(../img/fondo.png);
+	background-size:cover;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center; 
+}
+.header{
+	margin-bottom: 80px;
+}
+.container{
+	width:1000px;
+	height:;
+	/*margin:auto;*/
+	background-color:#f8f9fa;
+	position:relative;
+}
+.container::after{
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0px;
+	left:0px;
+	content:' ';
+	background:black;
+	filter:blur(5px);
+	z-index:-1;
+}
+.linea{
+	display:block;
+	background-color:#207b46;
+	color:white;
+	padding:5px 5px;
+}
+.logo{
+	float:left;
+	clear:both;
+	width:150px;
+	margin-top:10px;
+	margin-left:10px;
+}
+.menu{
+	display:inline-block;
+	float:right;
+	margin:40px 30px 0px 0px;
+	transition-property:left;
+	transition-duration:0.5s;
+}
+.menu-li{
+	display:inline-block;
+	float:left;
+	list-style:none;
+	margin:0 10px;
+	padding:5px 10px;
+	border-radius:5px;
+	background-color:#207b46;
+	transition-property:background-color;
+	transition-duration:0.3s;
+
+}
+.menu-li-a{
+	text-decoration:none;
+	color:white;
+}
+.menu-li:hover{
+	background-color:#5f862c;
+}
+.bars{
+	position:absolute;
+	top:65px;
+	right:20px;
+	width:20px;
+	display:none;
+}
+.main{
+	padding:30px;
+}
+.img-texto{
+	display:flex;
+	flex-wrap:wrap;
+	margin-top:30px;
+}
+.img-drog{
+	margin-left:0; 
+}
+.lista{
+	margin:20px auto;
+	display:block;
+		
+}
+.lista-li{
+	line-height:30px;
+}
+.tres-img{
+	display:flex;
+	justify-content:center;
+	flex-wrap:wrap;
+	column-gap:2px;
+	margin-top:40px; 
+	/*z-index:-1;*/
+}
+.tres-img-div{
+	/*position:relative;*/
+	border:1px solid #EAEAEA;
+	padding:20px;
+	padding-top:3px;
+	/*background-color:red;*/
+	/*z-index:1;*/
+
+}
+
+.enlace{
+	position:relative;
+	text-decoration:none;
+	background:;
+	z-index:1;
+}
+.enlace:hover::after{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	content:' ';
+	background:#E5E8E8;
+	filter:blur(2px);
+	z-index:-1; 
+}
+/*------------Nosotros--------------*/
+
+.noso-div{
+	margin-top:30px;
+	margin-bottom:40px; 
+}
+.cinco-img{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	column-gap:5px;
+}
+/*----------Ubiquenos-----------*/
+
+.dos-listas{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	column-gap:20px;
+}
+.dos-listas-ul{
+	width:400px;
+	padding:20px;
+}
+.mapa{
+	padding:20px 0;
+	width:100%;
+}
+.mapa-img{
+	width: 100%;
+}
+
+/*---------Contactenos--------*/
+.info-contac-contac{
+	width:300px;
+	margin:auto;
+	padding:50px 0;
+}
+form{
+	width:100%;
+	display:flex;
+	justify-content:center;
+	margin-top:30px;
+}
+.form-flex{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	width:30%;
+	
+}
+.form-flex-div {
+	padding:5px;
+	margin:5px;
+	outline:none;
+	resize:none;
+	display:inline-block;
+	width:90%;
+}
+
+.btn{
+	width: 30%;
+	margin:auto;
+	cursor:pointer;
+	background:green;
+	color:white;
+	border-radius:20px;
+}
+.btn:hover{
+	background-color:#5f862c; 
+}
+input,textarea{
+	padding:5px;
+	margin: 5px;
+	border:none;
+	resize:none;
+	background:transparent;
+}
+/*-------------------------------*/
+footer{
+	width:100%;
+	position:relative;
+	bottom:0px;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	background-color:;
+	padding: 10px;
+	margin-top:30px;
+	clear:both;
+	color:white;
+	font-weight:bold;
+
+}
+.info-contacto{
+	width:300px;
+	text-align:center;
+	float:left;
+	margin:0 20px;
+}
+.logo-contacto{
+	width:300px;
+	text-align:center;
+	float:left;	
+	margin:0 20px;
+}
+.img-tel{
+	width:150px;
+	margin:auto;
+
+}
+
+/*------------------------------------------*/
+.flex-center{
+	display:flex;
+	justify-content:center;
+}
+.texto-centrado{
+	text-align:center;
+}
+.texto-justificado{
+	text-align:justify;
+}
+.separador{
+	margin-top:10px;
+	margin-bottom:10px;
+}
+h1{
+	font-size:30px;
+	color:#5f862c;
+}
+h2{
+	font-size:20px;
+	color:#5f862c;
+}
+h3{
+	font-size:18px;
+	color:#5f862c;
+}
+hr{
+	width:75%;
+	margin:auto;
+}
+
+/*----------Media Query-----------*/
+
+@media(max-width:952px){
+	
+	.menu{
+		position: fixed;
+		top:120px;
+		left:-100%;
+		margin:0;
+		padding:0;
+		width:100%;
+		display:flex;
+		flex-direction:column;
+		text-align:center;
+	}
+	.activar{
+		left:0;
+	}
+	.menu-li{
+		clear:both;
+		border-radius:0px;
+		margin:0;
+		padding:50px 0;
+		display:block;
+		/*width: 100%;*/
+	}
+	.menu-li-a{
+		font-size:30px;
+	}
+	.bars{display:block;}
+	
+	.img-texto{
+		margin: auto;
+	}
+	.img-drog{
+		margin:auto;
+	}
+/*-----nostros------*/
+	.cinco-img-img{
+		margin-bottom:15px;
+	}
+
+/*-----ubiquenos-------*/
+	.dos-listas-ul{
+		display:block;
+		width:100%;
+		padding:20px;
+	}
+/*------contactenos------*/
+.form-flex{
+	width:70%;
+	
+}
+}
