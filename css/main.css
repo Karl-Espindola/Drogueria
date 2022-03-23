@@ -281,7 +281,7 @@ hr{
 @media(max-width:952px){
 	
 	.menu{
-		position: fixed;
+		position: absolute;
 		top:120px;
 		left:-100%;
 		margin:0;
